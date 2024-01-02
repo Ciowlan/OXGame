@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OXGame.MainPage">
+
+    <Grid RowDefinitions="1*,2*,2*,2*,1*"
+          ColumnDefinitions="3*,3*,3*"
+          RowSpacing="10"
+          ColumnSpacing="10"
+          Margin="20">
+
+        <Label Text="OX遊戲"
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                FontSize="48"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"/>
+
+        <Border Grid.Row="1" Grid.Column="0" Padding="20">
+            <Button x:Name="btn1" 
+            HeightRequest="100"
+            Text="1"   
+            FontSize="48"
+            AutomationId="1"
+            CommandParameter="1" />
+        </Border>
+
+        <Border Grid.Row="1" Grid.Column="1" Padding="20">
+            <Button x:Name="btn2" 
+            HeightRequest="100"
+            Text="2"   
+            FontSize="48"
+            AutomationId="2"
+            CommandParameter="2" />
+        </Border>
+
+        <Border Grid.Row="1" Grid.Column="2" Padding="20">
+            <Button x:Name="btn3" 
+            HeightRequest="100"
+            Text="3"   
+            FontSize="48"
+            AutomationId="3"
+            CommandParameter="3" />
+        </Border>
+
+        <Border Grid.Row="2" Grid.Column="0" Padding="20">
+            <Button x:Name="btn4" 
+            HeightRequest="100"
+            Text="4"   
+            FontSize="48"
+            AutomationId="4"
+            CommandParameter="4" />
+        </Border>
+
+        <Border Grid.Row="2" Grid.Column="1" Padding="20">
+            <Button x:Name="btn5" 
+            HeightRequest="100"
+            Text="5"   
+            FontSize="48"
+            AutomationId="5"
+            CommandParameter="5" />
+        </Border>
+
+        <Border Grid.Row="2" Grid.Column="2" Padding="20">
+            <Button x:Name="btn6" 
+            HeightRequest="100"
+            Text="6"   
+            FontSize="48"
+            AutomationId="6"
+            CommandParameter="6" />
+        </Border>
+
+        <Border Grid.Row="3" Grid.Column="0" Padding="20">
+            <Button x:Name="btn7" 
+            HeightRequest="100"
+            Text="7"   
+            FontSize="48"
+            AutomationId="7"
+            CommandParameter="7" />
+        </Border>
+
+        <Border Grid.Row="3" Grid.Column="1" Padding="20">
+            <Button x:Name="btn8" 
+            HeightRequest="100"
+            Text="8"   
+            FontSize="48"
+            AutomationId="8"
+            CommandParameter="8" />
+        </Border>
+
+        <Border Grid.Row="3" Grid.Column="2" Padding="20">
+            <Button x:Name="btn9" 
+            HeightRequest="100"
+            Text="9"   
+            FontSize="48"
+            AutomationId="9"
+            CommandParameter="9" />
+        </Border>
+
+        <Button Grid.Row="4"
+                Grid.ColumnSpan="3"
+                x:Name="reset" 
+                Text="Reset Game" 
+                Clicked="OnResetClicked"
+                HorizontalOptions="Center"
+                FontAttributes="Bold"
+                FontSize="26"
+                Margin="10"/>
+    </Grid>
+</ContentPage>
